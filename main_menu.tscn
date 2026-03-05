@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://c5bgb8p43dj2n"]
+[gd_scene load_steps=22 format=3 uid="uid://c5bgb8p43dj2n"]
 
 [ext_resource type="Texture2D" uid="uid://dslxddxku62eg" path="res://texture/wood.jpg" id="1_06t4h"]
 [ext_resource type="Texture2D" uid="uid://bf3mesmft6cw5" path="res://item/bento.png" id="2_7vrkn"]
@@ -13,6 +13,10 @@
 [ext_resource type="PackedScene" uid="uid://8xiaqhga4m35" path="res://korean_chicken.tscn" id="11_0k4wn"]
 [ext_resource type="AudioStream" uid="uid://byvht8ry042wt" path="res://bgm/chopstick pick.mp3" id="11_iotk1"]
 [ext_resource type="AudioStream" uid="uid://kfk8qq7e7ft0" path="res://bgm/drop.mp3" id="12_w44g7"]
+[ext_resource type="PackedScene" uid="uid://ctscdp4jaovmr" path="res://kfc.tscn" id="14_w44g7"]
+[ext_resource type="PackedScene" uid="uid://br4xi88d0er7j" path="res://pork_chop.tscn" id="15_cm266"]
+[ext_resource type="PackedScene" uid="uid://da010ttca8ylt" path="res://salad.tscn" id="16_g8g3n"]
+[ext_resource type="PackedScene" uid="uid://cscv400iwayn2" path="res://papaya_salad.tscn" id="17_8u0te"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7vrkn"]
 size = Vector2(215.5, 81.5)
@@ -98,4 +102,16 @@ stream = ExtResource("12_w44g7")
 volume_db = -10.495
 
 [node name="onigiri4" parent="." instance=ExtResource("11_0k4wn")]
-position = Vector2(183, 204)
+position = Vector2(113, 199)
+
+[node name="onigiri5" parent="." instance=ExtResource("14_w44g7")]
+position = Vector2(354, 195)
+
+[node name="onigiri6" parent="." instance=ExtResource("15_cm266")]
+position = Vector2(612, 82)
+
+[node name="onigiri7" parent="." instance=ExtResource("16_g8g3n")]
+position = Vector2(607, 197)
+
+[node name="onigiri8" parent="." instance=ExtResource("17_8u0te")]
+position = Vector2(830, 74)
